@@ -37,8 +37,10 @@ bool Stack::isEmpty() const {
 }
 
 void Stack::display() {
-    while (top != nullptr){
-        cout << top->data << " ";
-        top = top->next; 
+    cout << "\nSTACK:";
+    Node* curr = top;
+    while (curr != nullptr){
+        cout << curr->data << " ";
+        curr = curr->next; 
     }    
 }
